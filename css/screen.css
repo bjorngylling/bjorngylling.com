@@ -1,0 +1,107 @@
+body{
+  background-image: url("images/bg.png");
+}
+
+.site{
+  padding-top: 4em;
+}
+
+body > div > header{
+  margin-bottom: 1em;
+}
+
+header > hgroup{
+  text-shadow: 0 0 5px #000;
+}
+header > hgroup > h1{
+  margin-bottom: -0.5em;
+  font-size: 4em;
+  font-family: 'Vollkorn', arial, serif;
+  color: #c7d3d8;
+}
+header > hgroup > h2{
+  margin-left: 2.8em;
+  font-size: 1em;
+  font-family: 'Cabin', arial, serif;
+  color: #6d797d;
+}
+
+a{
+  color: #bfa158;
+}
+a:hover{  
+  color: #eac97b;
+  text-shadow: 0 0 5px #777;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+nav ul{
+  margin: 0 auto;
+  list-style: none;
+}
+nav ul li{
+  margin-left: 1em;
+}
+nav ul li a{
+  padding-left: 1.4em;
+  margin: 0;
+  font-family: 'Cabin', arial, serif;
+  font-size: 1.2em;  
+  line-height: 2em;  
+  text-decoration: none;
+}
+nav ul li.selected a {  
+  color: #fff;
+  text-shadow: 0 0 5px #777;  
+}
+nav ul li.blog a{ 
+  background: url("images/blog_icon.png") left center no-repeat;  
+}  
+nav ul li.about a{ 
+  background: url("images/about_icon.png") left center no-repeat;  
+}
+nav ul li.twitter a{ 
+  background: url("images/twitter_icon.png") left center no-repeat;  
+}  
+nav ul li.github a{ 
+  background: url("images/github_icon.png") left center no-repeat;  
+} 
+
+section{
+  margin-top: 0.5em; 
+}
+
+article header h1{
+  margin: -0.3em 0 0;
+}
+article header h1 a{
+  font-family: 'Vollkorn', arial, serif;
+  text-shadow: 0 0 5px #000;
+  text-decoration: none;
+}
+article time{
+  font-family: 'Cabin', arial, serif;
+  color: #6d797d;
+  text-shadow: 0 0 5px #000;
+}
+article p{
+  color: #ddd;
+  font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+  text-shadow: 1px 1px 1px #444;
+}
+
+footer{
+  margin-top: 2em;
+  font-family: 'Cabin', arial, serif;
+  color: #777;
+  text-align: center;
+}
+footer a{
+  color: #bfa158;
+  text-decoration: none;
+}
+footer a:hover{
+  color: #eac97b;
+}
