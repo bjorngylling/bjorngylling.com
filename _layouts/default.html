@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <title>Coding - {{ page.title }}</title>
+
+  <link rel="stylesheet" media="all" href="/css/reset.css" />
+  <link rel="stylesheet" media="all" href="/css/text.css" />
+  <link rel="stylesheet" media="all" href="/css/960.css" />
+  <link rel="stylesheet" media="all" href="/css/screen.css" />
+  <link rel="stylesheet" media="all" href="/css/syntax.css" />
+
+  <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+
+  <!--[if lt IE 9]>
+  <script src="js/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container_12 site">
+    <header class="grid_12">
+      <hgroup>
+        <h1>Coding</h1>
+        <h2>by Björn Gylling</h2>
+      </hgroup>
+    </header>
+    <nav class="grid_3">
+      <ul>
+        <li class="blog"><a href="/">Blog</a></li>
+        <li class="about"><a href="">About</a></li>
+        <li class="github"><a href="https://github.com/bjorngylling">Github</a></li>
+        <li class="twitter"><a href="http://www.twitter.com/bjorngylling">Twitter</a></li>
+      </ul>
+    </nav>
+    <section class="grid_9">
+      {{ content }}
+    </section>
+    <footer class="grid_12">
+      <p>&#169; 2011&#8211;present <a href="http://www.twitter.com/bjorngylling">Björn Gylling</a></p>
+    </footer>
+  </div>
+</body>
+</html>

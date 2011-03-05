@@ -28,6 +28,7 @@ header > hgroup > h2{
 
 a{
   color: #bfa158;
+  text-decoration: none;
 }
 a:hover{  
   color: #eac97b;
@@ -75,8 +76,7 @@ section{
 
 article header h1{
   margin: -0.3em 0 0;
-}
-article header h1 a{
+  color: #bfa158;
   font-family: 'Vollkorn', arial, serif;
   text-shadow: 0 0 5px #000;
   text-decoration: none;
@@ -89,7 +89,34 @@ article time{
 article p{
   color: #ddd;
   font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+  font-size: 1.1em;
   text-shadow: 1px 1px 1px #444;
+}
+
+ul.categories{
+  color: #6d797d;
+  font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+ul.categories li{
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul.categories li.first:after{
+  content: ": ";
+}
+ul.categories li:after{
+  content: ", ";
+}
+ul.categories li.last:after{
+  content: ". ";
+}
+
+p.pagination{
+  color: #ddd;
+  font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+  text-shadow: 1px 1px 1px #444;  
 }
 
 footer{

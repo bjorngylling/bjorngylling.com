@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article>
+  <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>{{ page.date | date: "%B %d, %Y" }}</time>
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+  {{ content }}
+
+  {% if page.categories %}
+  <ul class="categories">
+    <li class="first">Categories</li>
+    {% for category in page.categories %}    
+      <li{% if forloop.last %} class="last"{% endif %}>{{ category }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</article>

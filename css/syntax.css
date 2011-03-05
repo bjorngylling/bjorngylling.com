@@ -1,0 +1,33 @@
+.highlight {
+  font-family: 'Courier New', 'Terminal', monospace;
+  color: #E6E0DB;
+  padding: 3px 5px;
+  overflow: auto;
+  font-size: 12px;
+  margin: -1.8em 0;
+}
+.highlight pre {
+  margin: 0px;
+  padding: 0px;
+}
+
+.highlight .an { color:#E7BE69 }                      /* html attribute */
+.highlight .c  { color:#BC9358; font-style: italic; } /* comment */
+.highlight .ch { color:#509E4F }                      /* escaped character */
+.highlight .cl { color:#FFF }                         /* class */
+.highlight .co { color:#FFF }                         /* constant */
+.highlight .fl { color:#A4C260 }                      /* float */
+.highlight .fu { color:#FFC56D }                      /* function */
+.highlight .gv { color:#D0CFFE }                      /* global variable */
+.highlight .i  { color:#A4C260 }                      /* integer */
+.highlight .il { background:#151515 }                 /* inline code */
+.highlight .iv { color:#D0CFFE }                      /* instance variable */
+.highlight .pp { color:#E7BE69 }                      /* doctype */
+.highlight .r  { color:#CB7832 }                      /* keyword */
+.highlight .rx { color:#A4C260 }                      /* regex */
+.highlight .s  { color:#A4C260 }                      /* string */
+.highlight .sy { color:#6C9CBD }                      /* symbol */
+.highlight .ta { color:#E7BE69 }                      /* html tag */
+.highlight .pc { color:#6C9CBD }                      /* boolean */
+.highlight .na { color:#E8BF6A }
+.highlight .nt { color:#E8BF6A }
