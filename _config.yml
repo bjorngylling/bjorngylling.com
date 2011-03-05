@@ -1,2 +1,2 @@
 paginate: 5
-permalink: /:title.html
+permalink: /:year-:month-:day/:title.html
