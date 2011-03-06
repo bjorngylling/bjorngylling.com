@@ -1,0 +1,18 @@
+@media only screen and (max-device-width: 480px) {
+  .content {
+    margin: 0 2% 0 2%;
+  }
+  
+  header nav {
+    display: none;
+  }
+  
+  body {
+    font-size: 150%;
+  }
+  
+  pre {
+    overflow: auto;
+    font-size: 150%;
+  }
+}
