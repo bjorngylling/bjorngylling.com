@@ -2,24 +2,24 @@ body{
   background-image: url("images/bg.png");
 }
 
+h1, h2, h3, h4{
+  font-family: 'Vollkorn', "Georgia", "Times New Roman", arial, serif;
+}
+
 .site{
   padding-top: 4em;
 }
 
-body > div > header{
+.site > hgroup{
   margin-bottom: 1em;
-}
-
-header > hgroup{
   text-shadow: 0 0 5px #000;
 }
-header > hgroup > h1{
+.site > hgroup > h1{
   margin-bottom: -0.5em;
   font-size: 4em;
-  font-family: 'Vollkorn', arial, serif;
   color: #c7d3d8;
 }
-header > hgroup > h2{
+.site > hgroup > h2{
   margin-left: 2.8em;
   font-size: 1em;
   font-family: 'Cabin', arial, serif;
@@ -70,16 +70,16 @@ nav ul li.github a{
   background: url("images/github_icon.png") left center no-repeat;  
 } 
 
-section{
+.content{
   margin-top: 0.5em; 
 }
 
 article header h1{
   margin: -0.3em 0 0;
   color: #bfa158;
-  font-family: 'Vollkorn', arial, serif;
   text-shadow: 0 0 5px #000;
   text-decoration: none;
+  font-size: 2.1em;
 }
 article time{
   font-family: 'Cabin', arial, serif;
@@ -91,6 +91,35 @@ article p{
   font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
   font-size: 1.1em;
   text-shadow: 1px 1px 1px #444;
+}
+article > h1, h2, h3{
+  margin: 0;
+  color: #ddd;
+  text-shadow: 0 0 3px #000;
+  text-decoration: none;
+}
+article > h1{
+  font-size: 1.5em;
+}
+article > h2{
+  font-size: 1.3em;
+}
+article > h3{
+  font-size: 1.1em;
+}
+abbr{
+  border-bottom:1px dashed #999;
+}
+code, pre{
+  -moz-border-radius: 3px 3px 3px 3px;
+  background-color: #202525;
+  border: 1px solid #161a1b;
+  font-size: 13px;
+  padding: 0 4px;
+  color: #ddd;
+}
+pre > code{
+  border: none;
 }
 
 ul.categories{

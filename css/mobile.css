@@ -1,18 +1,25 @@
 @media only screen and (max-device-width: 480px) {
-  .content {
+  .container_12 .grid_9 {
+    left: 0;
+    width: 96%;
     margin: 0 2% 0 2%;
   }
   
-  header nav {
+  header.grid_12, nav.grid_3 {
     display: none;
   }
   
   body {
-    font-size: 150%;
+    font-size: 24px;
   }
-  
-  pre {
-    overflow: auto;
-    font-size: 150%;
+
+  article header h1{
+    font-size: 56px;
+  }
+  article h1{
+    font-size: 48px;
+  }
+  article h2{
+    font-size: 42px;
   }
 }
