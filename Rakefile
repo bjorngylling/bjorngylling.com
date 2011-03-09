@@ -1,16 +1,16 @@
 task :server do
-  sh "jekyll --auto --server"
+  sh "jekyll --auto --server --rdiscount --safe"
 end
 
 desc 'Creates a new post skeleton'
 task :post do
   require "Date"
   title = ENV['title']
-  slug = "#{Date.today}-#{title.downcase.gsub(/[^\w]+/, '-')}"
+  file_name = "#{Date.today}-#{title.downcase.gsub(/[^\w]+/, '-')}"
 
   file = File.join(
     File.dirname(__FILE__), '_posts',
-    slug + '.markdown'
+    file_name + '.markdown'
   )
 
   File.open(file, "w") do |f|
@@ -25,6 +25,8 @@ task :post do
 
     EOS
   end
+
+  `git add "#{file}"`
 end
 
 desc 'Updates the date for a specified blogpost'

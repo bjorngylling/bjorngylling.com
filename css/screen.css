@@ -81,7 +81,7 @@ article header h1{
   text-decoration: none;
   font-size: 2.1em;
 }
-article time{
+article header time{
   font-family: 'Cabin', arial, serif;
   color: #6d797d;
   text-shadow: 0 0 5px #000;
@@ -112,6 +112,9 @@ abbr{
 }
 code, pre{
   -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -o-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
   background-color: #202525;
   border: 1px solid #161a1b;
   font-size: 13px;
