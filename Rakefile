@@ -1,5 +1,5 @@
 task :server do
-  sh "jekyll --auto --server --rdiscount --safe"
+  sh "jekyll --auto --server --rdiscount --pygments --safe"
 end
 
 desc 'Creates a new post skeleton'
