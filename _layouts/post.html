@@ -5,18 +5,19 @@ layout: default
 <article>
   <header>
     <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>{{ page.date | date: "%B %d, %Y" }}</time>
+      
+    {% if page.categories %}
+    <ul class="categories">
+      <li class="first">Categories</li>
+      {% for category in page.categories %}    
+        <li{% if forloop.last %} class="last"{% endif %}>{{ category }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    
     <h1>{{ page.title }}</h1>
   </header>
   {{ content }}
-
-  {% if page.categories %}
-  <ul class="categories">
-    <li class="first">Categories</li>
-    {% for category in page.categories %}    
-      <li{% if forloop.last %} class="last"{% endif %}>{{ category }}</li>
-    {% endfor %}
-  </ul>
-  {% endif %}
 
   <p>Comments? Questions? <a href="http://www.twitter.com/bjorngylling">@bjorngylling</a></p>
 </article>
