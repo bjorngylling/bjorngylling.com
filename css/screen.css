@@ -29,13 +29,18 @@ h1, h2, h3, h4{
 a{
   color: #bfa158;
   text-decoration: none;
+  border-bottom: dotted 1px #6d797d;
 }
 a:hover{  
   color: #eac97b;
   text-shadow: 0 0 5px #777;
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  border-bottom: solid 1px #eac97b;
+}
+h1 a{
+  border: none;
+}
+h1 a:hover{
+  border: none;
 }
 
 nav ul{
@@ -48,10 +53,17 @@ nav ul li{
 nav ul li a{
   padding-left: 1.4em;
   margin: 0;
+  border: none;
   font-family: 'Cabin', arial, serif;
   font-size: 1.2em;  
   line-height: 2em;  
   text-decoration: none;
+}
+nav ul li a:hover{
+  border: none;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 nav ul li.selected a {  
   color: #fff;

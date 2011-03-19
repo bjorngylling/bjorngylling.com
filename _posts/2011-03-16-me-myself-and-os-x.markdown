@@ -45,4 +45,4 @@ When we've come this far installing Rails will be a small effort. Something we m
 Rails time! The command `gem install rails` will install the Rails gem and all required dependencies (there's quite a lot) for you. After that you can generate your first Rails project by running `rails new my_awesome_rails_application`.
 
 ## Learning Ruby on Rails
-My tip on getting started with Ruby on Rails is to get the book "Rails 3 in Action" by [Ryan Biggs](http://www.twitter.com/ryanbigg) and [Yehuda Katz](http://www.twitter.com/wycats). It's current in the process of being finished but by buying it now you'll get early access to it. Feel free to join #RubyOnRails at irc.freenode.net as well.
+My tip on getting started with Ruby on Rails is to get the book [Rails 3 in Action](http://www.manning.com/katz/) by [Ryan Biggs](http://www.twitter.com/ryanbigg) and [Yehuda Katz](http://www.twitter.com/wycats). It's current in the process of being finished but by buying it now you'll get early access to it. Feel free to join #RubyOnRails at irc.freenode.net as well.
