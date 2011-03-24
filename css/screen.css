@@ -95,8 +95,8 @@ article header h1{
 }
 article header time{
   font-family: 'Cabin', arial, serif;
-  color: #6d797d;
-  text-shadow: 0 0 5px #000;
+  color: #505c60;
+  text-shadow: -1px -1px 0px #131d21;
 }
 article p{
   color: #ddd;
@@ -137,9 +137,9 @@ pre > code{
 }
 
 ul.categories{
-  color: #6d797d;
   font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
-  text-shadow: 0 0 5px #000;
+  color: #505c60;
+  text-shadow: -1px -1px 0px #131d21;
 }
 ul.categories li{
   display: inline;
