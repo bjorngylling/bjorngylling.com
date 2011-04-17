@@ -31,7 +31,7 @@ a{
   text-decoration: none;
   border-bottom: dotted 1px #6d797d;
 }
-a:hover{  
+a:hover{
   color: #eac97b;
   text-shadow: 0 0 5px #777;
   border-bottom: solid 1px #eac97b;
@@ -55,8 +55,8 @@ nav ul li a{
   margin: 0;
   border: none;
   font-family: 'Cabin', arial, serif;
-  font-size: 1.2em;  
-  line-height: 2em;  
+  font-size: 1.2em;
+  line-height: 2em;
   text-decoration: none;
 }
 nav ul li a:hover{
@@ -65,22 +65,25 @@ nav ul li a:hover{
   -webkit-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-nav ul li.selected a {  
+nav ul li.selected a {
   color: #fff;
-  text-shadow: 0 0 5px #777;  
+  text-shadow: 0 0 5px #777;
 }
-nav ul li.blog a{ 
-  background: url("images/blog_icon.png") left center no-repeat;  
-}  
-nav ul li.about a{ 
-  background: url("images/about_icon.png") left center no-repeat;  
+nav ul li.blog a{
+  background: url("images/blog_icon.png") left center no-repeat;
 }
-nav ul li.twitter a{ 
-  background: url("images/twitter_icon.png") left center no-repeat;  
-}  
-nav ul li.github a{ 
-  background: url("images/github_icon.png") left center no-repeat;  
-} 
+nav ul li.about a{
+  background: url("images/about_icon.png") left center no-repeat;
+}
+nav ul li.twitter a{
+  background: url("images/twitter_icon.png") left center no-repeat;
+}
+nav ul li.github a{
+  background: url("images/github_icon.png") left center no-repeat;
+}
+nav ul li.forrst a{
+  background: url("images/forrst_icon.png") left center no-repeat;
+}
 
 .content{
   margin-top: 0.5em; 
