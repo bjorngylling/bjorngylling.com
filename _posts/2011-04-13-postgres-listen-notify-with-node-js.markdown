@@ -55,7 +55,7 @@ Some of you might have noticed that we need to do one more thing in
 Postgres to get this to work. We need to set up a trigger to fire this
 newly created function when a insert-query is performed on our table.
 {% highlight sql %}
-CREATE TRIGGER watched_table_trigger AFTER INSERT ON bar
+CREATE TRIGGER watched_table_trigger AFTER INSERT ON foo
 FOR EACH ROW EXECUTE PROCEDURE notify_trigger();
 {% endhighlight %}
 
