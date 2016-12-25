@@ -81,12 +81,9 @@ nav ul li.twitter a{
 nav ul li.github a{
   background: url("images/github_icon.png") left center no-repeat;
 }
-nav ul li.forrst a{
-  background: url("images/forrst_icon.png") left center no-repeat;
-}
 
 .content{
-  margin-top: 0.5em; 
+  margin-top: 0.5em;
 }
 
 article header h1{
@@ -162,7 +159,7 @@ ul.categories li.last:after{
 p.pagination{
   color: #ddd;
   font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
-  text-shadow: 1px 1px 1px #444;  
+  text-shadow: 1px 1px 1px #444;
 }
 
 footer{
