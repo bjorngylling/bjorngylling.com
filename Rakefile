@@ -1,5 +1,6 @@
-task :server do
-  sh "jekyll --auto --server --rdiscount --pygments --safe"
+desc 'Serve the Jekyll page locally'
+task :serve do
+  sh "jekyll serve"
 end
 
 desc 'Creates a new post skeleton'
@@ -19,8 +20,8 @@ task :post do
     layout: post
     title: #{title}
     published: false
-    categories: 
-    - 
+    categories:
+    -
     ---
 
     EOS
