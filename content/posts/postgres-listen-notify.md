@@ -1,12 +1,10 @@
----
-layout: post
-title: Postgres LISTEN / NOTIFY with Node.js
-published: true
-categories:
-- Postgres
-- Node.js
-- LISTEN / NOTIFY
----
++++ 
+date = "2011-04-13"
+title = "Postgres LISTEN / NOTIFY with Node.js"
+slug = "postgres-listen-notify"
+tags = ["Postgres", "Node.js", "LISTEN / NOTIFY"]
+categories = []
++++
 
 I'm sure most of you have been hearing about [Node.js](http://nodejs.org) lately, it has been
 causing quite a buzz. If you're wondering what Node.js is all about I
@@ -20,13 +18,13 @@ queries are performed on specific tables.
 
 I wrote a short Node.js script that basically "watches" a table in a
 Postgres database. Say we have the following table:
-{% highlight sql %}
+{{< highlight sql >}}
 CREATE TABLE foo (id serial primary key, name varchar);
-{% endhighlight %}
+{{< / highlight >}}
 We then create a function which will perform the notification to a
 channel we can later watch in our Node.js application.
 
-{% highlight sql %}
+{{< highlight sql >}}
 CREATE FUNCTION notify_trigger() RETURNS trigger AS $$
 DECLARE
 BEGIN
@@ -34,7 +32,7 @@ BEGIN
   RETURN new;
 END;
 $$ LANGUAGE plpgsql;
-{% endhighlight %}
+{{< / highlight >}}
 The interesting line here is the call to `pg_notify`, the
 arguments here are the channel name to send the notification to and the
 second part is the message. In this case the message consists of a
@@ -54,16 +52,16 @@ notifying a channel without passing any message.
 Some of you might have noticed that we need to do one more thing in
 Postgres to get this to work. We need to set up a trigger to fire this
 newly created function when a insert-query is performed on our table.
-{% highlight sql %}
+{{< highlight sql >}}
 CREATE TRIGGER watched_table_trigger AFTER INSERT ON foo
 FOR EACH ROW EXECUTE PROCEDURE notify_trigger();
-{% endhighlight %}
+{{< / highlight >}}
 
 # Node.js
 To interact with Postgres from Node.js I use the excellent module
 [node-postgres](https://github.com/brianc/node-postgres) by [Brian
 Carlson](https://twitter.com/briancarlson).
-{% highlight js %}
+{{< highlight js >}}
 var pg = require ('pg');
 
 var pgConString = "postgres://localhost/bjorngylling"
@@ -77,7 +75,7 @@ pg.connect(pgConString, function(err, client) {
   });
   var query = client.query("LISTEN watchers");
 });
-{% endhighlight %}
+{{< / highlight >}}
 This will set up the postgres-client to listen on the `watchers` channel
 and when a notification comes in it will just print it to the console.
 If you are trying this on your own machine you will probably have to

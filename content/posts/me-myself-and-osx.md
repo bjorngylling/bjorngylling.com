@@ -1,14 +1,10 @@
----
-layout: post
-title: Me, myself and OS X
-published: true
-categories: 
-- OS X
-- Sublime Text 2
-- Ruby 1.9.2
-- Ruby on Rails 3
-- RVM
----
++++ 
+date = "2011-03-16"
+title = "Me, myself and OS X"
+slug = "me-myself-and-osx"
+tags = ["OS X", "Sublime Text 2", "Ruby 1.9.2", "Ruby on Rails 3", "RVM"]
+categories = []
++++
 
 **First off, YAY MY MACBOOK PRO ARRIVED!**
 

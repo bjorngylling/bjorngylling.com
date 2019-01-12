@@ -1,15 +1,11 @@
----
-layout: post
-title: git commit -m "Awesome blog-post"
-published: true
-categories:
-- Github Pages
-- Git
-- Jekyll
-- Pygments
-- Liquid
-- Ruby
----
++++ 
+date = "2011-03-09"
+title = "git commit -m 'Awesome blog-post'"
+slug = "awesome-blog-post"
+tags = ["Github Pages", "Git", "Jekyll", "Pygments", "Liquid", "Ruby"]
+categories = []
++++
+
 An introduction to blogging on [Github Pages](http://pages.github.com) with Git and [Jekyll](https://github.com/mojombo/jekyll/). In this post I'm going to describe how Coding (this blog) is set up. Everything is hosted on Github Pages which is completely **free** of charge, the only thing I have to pay for with this setup is the domain-name. Alright, so let's get into how this works and why it's so *great*!
 # Jekyll
 Github Pages serves only static content. At first it might seem like a bad idea to host a blog on a host which serves only static content. The purpose of a blog is to add content regularly right! To add new posts and link to them from the front-page while using the correct layout and make it easy for the writer to add posts Github Pages uses a Ruby gem called **Jekyll**. What Jekyll does is that it runs in a directory and generates a site with static html-pages. 
@@ -40,14 +36,14 @@ Jekyll uses a template engine called [Liquid](https://github.com/tobi/liquid/wik
 ## Code highlighting
 For code highlighting Jekyll uses [Pygments](http://pygments.org). The style I'm using is a slightly modified version of the syntax-highlighting found at [Railscasts](http://railscasts.com/episodes/207-syntax-highlighting "#207 - Syntax Highlightning"). It's also the [color scheme](http://railscasts.com/about) I'm using for my current editor, [Sublime Text 2](http://www.sublimetext.com/2).
 A test of Ruby highlighting:
-{% highlight ruby %}
+{{< highlight ruby >}}
 def test_lambda_functions
   code = "foo = { |var| var + 10 }
           foo(22)"
           
   assert_equal 32, parse(code)
 end
-{% endhighlight %}
+{{< / highlight >}}
 
 # Writing a post
 Posts can be written in either [Markdown](http://daringfireball.net/projects/markdown/), [Textile](http://redcloth.org/textile) or plain old HTML. Jekyll will decide how to treat it depending on the file-extension. As mentioned earlier the format of the filename is quite important, it also makes it a bit of a hassle to make a new post. However there are ways to ease the burden on the [hard](abbr:hardly)-working blogger! 

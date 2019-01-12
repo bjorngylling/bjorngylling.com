@@ -1,4 +1,0 @@
-gems: [jekyll-paginate]
-paginate: 5
-permalink: /:year-:month-:day/:title.html
-markdown: kramdown

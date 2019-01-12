@@ -1,15 +1,10 @@
----
-layout: post
-title: New Macbook Pro!
-published: true
-categories:
-- macOS
-- Macbook Pro
-- Homebrew
-- Sublime Text
-- Hyper terminal
-- Zsh
----
++++ 
+date = "2016-12-25"
+title = "New Macbook Pro!"
+slug = "new-macbook-pro"
+tags = ["macOS", "Macbook Pro", "Homebrew", "Sublime Text", "Hyper terminal", "Zsh"]
+categories = []
++++
 
 It has been almost five years since I last posted anything here. I intend to change that going forwards, starting right now with this post. I recently got myself a new Macbook Pro (the [13" 2016 Touch Bar model](http://www.apple.com/macbook-pro/)). Five years ago I wrote a post about how I set it up and now I figured a good way of starting off again would be to write a new version about how I set up my new Macbook.
 
